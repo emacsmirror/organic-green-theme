@@ -98,7 +98,7 @@ The theme needs to be reloaded after changing anything in this group."
    `(extra-bold ((,class (:weight extra-bold))))
    `(semi-bold ((,class (:weight semi-bold))))
    `(italic ((,class (:slant italic))))
-   `(error ((,class (:foreground ,organic-red :weight normal))))
+   `(error ((,class (:foreground ,organic-red))))
    `(escape-glyph ((,class (:foreground ,organic-sun))))
    `(warning ((,class (:foreground ,organic-orange))))
    `(success ((,class (:foreground ,organic-sun))))
@@ -112,13 +112,13 @@ The theme needs to be reloaded after changing anything in this group."
    `(font-lock-builtin-face ((,class (:foreground ,organic-teal))))
    `(font-lock-comment-face ((,class (:foreground ,organic-gray))))
    `(font-lock-constant-face ((,class (:foreground ,organic-blue))))
-   `(font-lock-function-name-face ((,class (:foreground ,organic-blue :weight normal))))
-   `(font-lock-keyword-face ((,class (:foreground ,organic-purple :weight normal))))
+   `(font-lock-function-name-face ((,class (:foreground ,organic-blue))))
+   `(font-lock-keyword-face ((,class (:foreground ,organic-purple))))
    `(font-lock-string-face ((t (:foreground ,organic-green))) t)
    `(font-lock-doc-face ((t (:foreground ,organic-green))) t)
-   `(font-lock-type-face ((t (:foreground ,organic-teal :weight normal))))
+   `(font-lock-type-face ((t (:foreground ,organic-teal))))
    `(font-lock-variable-name-face ((,class (:foreground ,organic-yellow))))
-   `(font-lock-warning-face ((,class (:foreground ,organic-orange :weight normal))))
+   `(font-lock-warning-face ((,class (:foreground ,organic-orange))))
 
    ;; ui
    `(cursor ((,class (:background ,organic-cursor-fg))))
@@ -169,9 +169,9 @@ The theme needs to be reloaded after changing anything in this group."
    '(jabber-title-medium ((t (:inherit jabber-title-small :height 1.2))))
    '(jabber-title-large ((t (:inherit jabber-title-medium :height 1.2))))
    '(jabber-chat-prompt-local ((t (:inherit font-lock-string-face :bold t))))
-   '(jabber-chat-prompt-foreign ((t (:inherit font-lock-function-name-face :bold nil))))
+   '(jabber-chat-prompt-foreign ((t (:inherit font-lock-function-name-face))))
    '(jabber-chat-prompt-system ((t (:inherit font-lock-comment-face :bold t))))
-   '(jabber-rare-time-face ((t (:inherit font-lock-function-name-face :bold nil))))
+   '(jabber-rare-time-face ((t (:inherit font-lock-function-name-face))))
    '(jabber-activity-face ((t (:inherit jabber-chat-prompt-foreign))))
    '(jabber-activity-personal-face ((t (:inherit jabber-chat-prompt-local :bold t))))
 
@@ -200,9 +200,9 @@ The theme needs to be reloaded after changing anything in this group."
    ;; Java
    '(jdee-java-properties-font-lock-comment-face ((t (:inherit font-lock-comment-face))))
    `(jdee-java-properties-font-lock-equal-face ((t (:foreground ,organic-blue))))
-   '(jdee-java-properties-font-lock-substitution-face ((t (:inherit font-lock-function-name-face :bold nil))))
-   '(jdee-java-properties-font-lock-class-name-face ((t (:inherit font-lock-constant-face :bold nil))))
-   '(jdee-java-properties-font-lock-value-face ((t (:inherit font-lock-string-face :bold nil))))
+   '(jdee-java-properties-font-lock-substitution-face ((t (:inherit font-lock-function-name-face))))
+   '(jdee-java-properties-font-lock-class-name-face ((t (:inherit font-lock-constant-face))))
+   '(jdee-java-properties-font-lock-value-face ((t (:inherit font-lock-string-face))))
    `(jdee-java-properties-font-lock-backslash-face ((t (:foreground ,organic-sun))))
 
    ;; Scala
@@ -296,7 +296,7 @@ The theme needs to be reloaded after changing anything in this group."
    `(magit-process-ok ((t (:foreground ,organic-green))) t)
    `(magit-section-highlight ((t (:background ,organic-cursor-bg))) t)
    `(magit-branch-remote ((t (:foreground ,organic-yellow))) t)
-   `(magit-section-heading ((t (:bold nil :foreground ,organic-purple))) t)
+   `(magit-section-heading ((t (:foreground ,organic-purple))) t)
    `(magit-branch-local ((t (:foreground ,organic-yellow))) t)
    `(magit-tag ((t (:foreground ,organic-sun))) t)
    `(git-commit-summary ((t (:foreground ,organic-teal))) t)
@@ -315,12 +315,12 @@ The theme needs to be reloaded after changing anything in this group."
 
    ;; Org-Mode
    `(org-table ((t (:foreground ,organic-teal))) t)
-   `(org-level-1 ((t (:foreground ,organic-purple :weight normal))) t)
-   `(org-level-2 ((t (:foreground ,organic-blue :weight normal))) t)
-   `(org-level-3 ((t (:foreground ,organic-yellow :weight normal))) t)
-   `(org-level-4 ((t (:foreground ,organic-green :weight normal))) t)
-   `(org-level-5 ((t (:foreground ,organic-sun :weight normal))) t)
-   `(org-level-6 ((t (:foreground ,organic-orange :weight normal))) t)
+   `(org-level-1 ((t (:foreground ,organic-purple))) t)
+   `(org-level-2 ((t (:foreground ,organic-blue))) t)
+   `(org-level-3 ((t (:foreground ,organic-yellow))) t)
+   `(org-level-4 ((t (:foreground ,organic-green))) t)
+   `(org-level-5 ((t (:foreground ,organic-sun))) t)
+   `(org-level-6 ((t (:foreground ,organic-orange))) t)
    `(org-block ((,class (:foreground ,organic-fg))))
    `(org-block-begin-line ((t (:foreground ,organic-blue))) t)
    `(org-block-end-line ((t (:foreground ,organic-blue))) t)
@@ -328,7 +328,7 @@ The theme needs to be reloaded after changing anything in this group."
    `(org-todo ((t (:inherit warning))) t)
 
    ;; Misc
-   `(nxml-element-local-name ((t (:foreground ,organic-blue :weight normal))) t)
+   `(nxml-element-local-name ((t (:foreground ,organic-blue))) t)
    `(yas-field-highlight-face ((t (:background ,organic-yellow))))
    `(idle-highlight ((t (:background ,organic-highlight-green))) t)
    `(comint-highlight-prompt ((t (:foreground ,organic-blue))) t)
