@@ -139,7 +139,7 @@ The theme needs to be reloaded after changing anything in this group."
        `(lazy-highlight ((,class (:background ,organic-highlight-green :inverse-video nil))))
        `(isearch ((,class (:foreground ,organic-fg :background ,organic-marker-yellow :inverse-video nil))))
        `(cua-rectangle ((,class (:background ,organic-marker-green))))
-       `(secondary-selection ((,class (:background ,organic-marker-blue))))
+       `(secondary-selection ((,class (:background ,organic-highlight-blue))))
        `(trailing-whitespace ((,class (:background ,organic-red))))
 
        ;; external packages
