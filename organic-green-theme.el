@@ -299,6 +299,7 @@ The theme needs to be reloaded after changing anything in this group."
    `(magit-section-heading ((t (:foreground ,organic-purple))) t)
    `(magit-branch-local ((t (:foreground ,organic-yellow))) t)
    `(magit-tag ((t (:foreground ,organic-sun))) t)
+   `(magit-filename ((t (:inherit default))) t)
    `(git-commit-summary ((t (:foreground ,organic-teal))) t)
 
    ;; Git-Gutter
