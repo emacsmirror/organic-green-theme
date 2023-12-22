@@ -292,6 +292,7 @@ The theme needs to be reloaded after changing anything in this group."
    `(magit-diff-file-heading-highlight ((t (:background ,organic-cursor-bg))) t)
    `(magit-item-highlight ((t (:background ,organic-highlight-gray))) t)
    `(magit-log-author ((t (:foreground ,organic-sun))) t)
+   `(magit-log-date ((t (:foreground ,organic-dark-gray))) t)
    `(magit-popup-argument ((t (:foreground ,organic-blue))) t)
    `(magit-process-ok ((t (:foreground ,organic-green))) t)
    `(magit-section-highlight ((t (:background ,organic-cursor-bg))) t)
