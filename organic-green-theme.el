@@ -207,6 +207,7 @@ The theme needs to be reloaded after changing anything in this group."
 
    ;; Scala
    `(scala-font-lock:var-face ((t (:foreground ,organic-orange))))
+   `(scala-font-lock-var-face ((t (:foreground ,organic-orange))))
 
    ;; Lsp
    `(lsp-ui-doc-border ((t (:background ,organic-gray))))
