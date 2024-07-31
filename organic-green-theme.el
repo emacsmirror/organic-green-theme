@@ -209,6 +209,9 @@ The theme needs to be reloaded after changing anything in this group."
    `(scala-font-lock:var-face ((t (:foreground ,organic-orange))))
    `(scala-font-lock-var-face ((t (:foreground ,organic-orange))))
 
+   ;; Emacs Lisp
+   `(elisp-shorthand-font-lock-face ((t (:foreground ,organic-violet))))
+
    ;; Lsp
    `(lsp-ui-doc-border ((t (:background ,organic-gray))))
    `(lsp-ui-doc-background ((t (:background ,organic-highlight-green))))
